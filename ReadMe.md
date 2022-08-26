@@ -14,6 +14,7 @@
     id="name"
     type="text"
   />
+  <button onclick="alert('您好');">加入</button>
   <ul>
     <li>清單項目1</li>
     <li>清單項目2</li>
