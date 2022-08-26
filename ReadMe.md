@@ -14,6 +14,11 @@
     id="name"
     type="text"
   />
+  <ul>
+    <li>清單項目1</li>
+    <li>清單項目2</li>
+    <li>清單項目3</li>
+  </ul>
 </body>
 
 </html>
