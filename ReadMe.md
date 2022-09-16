@@ -1,69 +1,180 @@
-# 第二週語法-購物車
+# 第三週語法-賓果遊戲
 ```
 <html>
 
 <head>
-  <title>購物車</title>
+  <title>賓果遊戲</title>
+  <script src="main.js"></script>
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
 </head>
 
 <body>
-
-  <!-- 請在下方加入本週的HTML語法 -->
-
-
-
-
-
-
-
-
-
-  <!-- 請在上方加入本週的HTML語法 -->
-
-  <button id="pay">結帳</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- 以下請勿更改 -->
-  <script>
-    const addBtn = document.querySelector('button');
-    const payBtn = document.querySelector('#pay');
-    const cart = document.querySelector('ul');
-    const product = document.querySelector('select');
-    addBtn.addEventListener('click', () => {
-      const li = document.createElement('li');
-      li.textContent = product.value;
-      cart.appendChild(li);
-    });
-    payBtn.addEventListener('click', () => {
-
-      if (cart.children.length === 0) {
-        alert('購物車是空的');
-        return;
-      }
-
-      let cartListString = '感謝您的購買，您本次購買的商品如下：';
-      document.querySelectorAll('ul li').forEach((li) => cartListString += '\n' + li.textContent);
-      alert(cartListString);
-      document.location.reload();
-    });
-
-  </script>
-  <!-- 以上請勿更改 -->
+  <table>
+    <caption>這是一個五乘五的賓果遊戲表格</caption>
+    <tr>
+      <td>
+        <label>
+          <input type="checkbox">
+          番茄
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          酪梨
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          草莓
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          哈密瓜
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          葡萄
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>
+          <input type="checkbox">
+          橘子
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          百香果
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          火龍果
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          水蜜桃
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          香瓜
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>
+          <input type="checkbox">
+          釋迦
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          蔓越莓
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          香蕉
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          水梨
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          芒果
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>
+          <input type="checkbox">
+          桃子
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          蘋果
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          龍眼
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          奇異果
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          藍莓
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>
+          <input type="checkbox">
+          柳橙
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          檸檬
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          枇杷
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          榴槤
+        </label>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox">
+          鳳梨
+        </label>
+      </td>
+    </tr>
+  </table>
 
 </body>
 
