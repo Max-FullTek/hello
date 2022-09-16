@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Document</title>
+  <style>
+    a,
+    button {
+      width: 100px;
+      height: 40px;
+      outline: none;
+      border: none;
+      box-sizing: border-box;
+      border-radius: 10px;
+      background-color: darkblue;
+      color: white;
+      text-decoration: none;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 5px 10px;
+      font-size: 14px;
+      display: block;
+      margin: 20px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://www.google.com/"
+    target="_blank"
+    title="另開新視窗"
+  >
+    Google
+  </a>
+
+  <a
+    href="https://www.youtube.com/"
+    target="_blank"
+    title="另開新視窗"
+  >
+    Youtube
+  </a>
+
+  <button
+    onclick="openFacebook()"
+    title="另開新視窗"
+  >
+    Facebook
+  </button>
+
+  <a
+    href="https://www.instagram.com/"
+    target="_blank"
+    title="另開新視窗"
+  >
+    Instagram
+  </a>
+
+  <script>
+    function openFacebook() {
+      window.open('https://www.facebook.com/', '_blank');
+    }
+  </script>
+</body>
+
+</html>
