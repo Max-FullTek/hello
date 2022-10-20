@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <style>
+    .error {
+      border-color: red;
+    }
+
+    img {
+      width: 30%;
+      height: 30%;
+    }
+
+    article {
+      padding: 15px 10px;
+      margin-top: 10px 0;
+      border-bottom: 1px solid black;
+    }
+  </style>
+  <title>有障礙網頁</title>
+</head>
+
+<body>
+  <main>
+    <h1>有障礙網頁</h1>
+    <article>
+      <p>下列一共有十個題目，每一個題目都符合一項無障礙規範指引中的一項，請在記事本上撰寫題號，並寫下該題的問題與對應的指引。</p>
+      <p>若能夠額外寫上建議的修改方式，則可額外加分。</p>
+    </article>
+    <article>
+      <h2>第1題</h2>
+      <p>請輸入</p>
+      <input type="text" />
+      <button onclick="alert('完成')">送出</button>
+      </section>
+    </article>
+    <article>
+      <h2>第2題</h2>
+      <p>新聞</p>
+      <audio
+        controls
+        data-src="https://artts.udn.com.tw/udn/6702956-TTS-rebecca.mp3"
+        src="https://artts.udn.com.tw/udn/6702956-TTS-rebecca.mp3"
+      >
+        Your browser does not support HTML5 Audio! 😢
+      </audio>
+    </article>
+    <article>
+      <h2>第3題</h2>
+      <p>公告</p>
+      <img src="https://www-ws.gov.taipei/001/Upload/471/relpic/10173/8883187/3e1c587c-0caf-4259-80d8-964186eebc19.jpg">
+    </article>
+    <article>
+      <h2>第4題</h2>
+      <p>友善連結</p>
+      <a href="https://service.ntpc.gov.tw/service/Index.action">新北市政府雲端櫃台</a>
+    </article>
+    <article>
+      <h2>第5題</h2>
+      <p>友善連結 part2</p>
+      <a href="https://service.ntpc.gov.tw/service/Index.action">https://service.ntpc.gov.tw/service/Index.action</a>
+    </article>
+    <article>
+      <h2>第6題</h2>
+      <p>註冊會員，輸入以下資料後，請按下註冊按鈕。</p>
+      <form>
+        <input
+          type="text"
+          placeholder="姓氏"
+          required
+        />
+        <input
+          type="text"
+          placeholder="名字"
+          required
+        />
+        <input
+          id="phone"
+          type="text"
+          placeholder="電話"
+          required
+        />
+        <button
+          id="register-button"
+          type="submit"
+          onclick="onRegister()"
+        >註冊</button>
+      </form>
+    </article>
+    <article>
+      <h2>第七題</h2>
+      <p>圖書館</p>
+      <section>
+        <h3>類別選擇</h3>
+        <label>
+          <input
+            type="radio"
+            value="文學類"
+            name="book-type"
+          >
+          文學類
+        </label>
+        <label>
+          <input
+            type="radio"
+            value="漫畫類"
+            name="book-type"
+          >
+          漫畫類
+        </label>
+        <label>
+          <input
+            type="radio"
+            value="雜誌類"
+            name="book-type"
+          >
+          雜誌類
+        </label>
+      </section>
+      <section>
+        <h3>書目</h3>
+        <ul id="book-list"></ul>
+      </section>
+    </article>
+    <article>
+      <h2>第8題</h2>
+      <p>小學回家功課</p>
+      <p>以下清單是回家功課，標記紅色的請在明天早上交，其餘的下周交。</p>
+      <ol>
+        <li>硬筆字練習-第二課</li>
+        <li style="color: red">數學習題-第10至12頁</li>
+        <li>美術課-我的自畫像</li>
+      </ol>
+    </article>
+    <article>
+      <h2>第9題</h2>
+      <p>網銀密碼</p>
+      <p>請利用下方鍵盤，輸入網銀4位數密碼</p>
+      <button
+        class="bank-keypad"
+        tabindex="-1"
+      >1</button>
+      <button
+        class="bank-keypad"
+        tabindex="-1"
+      >2</button>
+      <button
+        class="bank-keypad"
+        tabindex="-1"
+      >3</button>
+      <button
+        class="bank-keypad"
+        tabindex="-1"
+      >4</button>
+      <button
+        class="bank-keypad"
+        tabindex="-1"
+      >5</button>
+      <button
+        class="bank-keypad"
+        tabindex="-1"
+      >6</button>
+      <button
+        class="bank-keypad"
+        tabindex="-1"
+      >7</button>
+      <button
+        class="bank-keypad"
+        tabindex="-1"
+      >8</button>
+      <button
+        class="bank-keypad"
+        tabindex="-1"
+      >9</button>
+      <button
+        class="bank-keypad"
+        tabindex="-1"
+      >0</button>
+      <button id="bank-password-reset">清除</button>
+      <section>
+        <input
+          type="password"
+          id="bank-password"
+          placeholder="請利用上方鍵盤輸入4位數密碼"
+          readonly
+        >
+        <button onclick="alert('密碼錯誤')">確認</button>
+      </section>
+    </article>
+    <article>
+      <h2>第10題</h2>
+      <p>食譜</p>
+      <p>請依據以下順序放入食材</p>
+      <p>鍋中加入適量沙拉油</p>
+      <p>開小火</p>
+      <p>放入肉末炒香</p>
+      <p>放入茄子丁</p>
+      <p>加入適量鹽巴與糖</p>
+      <p>大火炒至食材熟透</p>
+      <p>加入適量番茄醬與辣椒末</p>
+      <p>起鍋前加入少許胡椒粉</p>
+      <p>擺盤</p>
+    </article>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const phoneInput = document.getElementById('phone');
+      const registerButton = document.getElementById('register-button');
+      const radios = document.querySelectorAll('input[type="radio"]');
+      const bankKeypads = document.querySelectorAll('.bank-keypad');
+      const bankPasswordReset = document.getElementById('bank-password-reset');
+
+      registerButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        const phone = phoneInput.value;
+        if (RegExp('^09[0-9]{8}$').test(phone)) {
+        } else {
+          phoneInput.classList.add('error');
+        }
+      });
+
+      radios.forEach(function (radio) {
+        radio.addEventListener('focus', function (event) {
+          const value = event.target.value;
+          if (value === '漫畫類') {
+            updateBookList(['火影忍者', '海賊王', '鬼滅之刃']);
+          } else if (value === '文學類') {
+            updateBookList(['三國演義', '水滸傳', '西遊記']);
+          } else if (value === '雜誌類') {
+            updateBookList(['天下雜誌', '康健雜誌', 'Life雜誌']);
+          }
+        });
+      });
+
+      bankKeypads.forEach(function (keypad) {
+        keypad.addEventListener('click', function (event) {
+          const passwordInput = document.getElementById('bank-password');
+          const password = passwordInput.value;
+          if (password.length < 4) {
+            passwordInput.value = password + event.target.innerText;
+          }
+        });
+      });
+
+      bankPasswordReset.addEventListener('click', function (event) {
+        const passwordInput = document.getElementById('bank-password');
+        passwordInput.value = '';
+      });
+
+    });
+
+    function updateBookList(books) {
+      const bookList = document.getElementById('book-list');
+      bookList.innerHTML = '';
+      books.forEach(function (book) {
+        const li = document.createElement('li');
+        li.innerText = book;
+        bookList.appendChild(li);
+      });
+    }
+
+  </script>
+</body>
+
+</html>
