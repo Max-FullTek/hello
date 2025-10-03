@@ -48,7 +48,7 @@ function ready() {
   for (let i = 0; i < 5; i++) {
     const tr = document.createElement('tr');
     for (let j = 0; j < 5; j++) {
-      const label = document.createElement('span');
+      const label = document.createElement('label');
       label.appendChild(document.createTextNode(randomPopFruits()));
       const checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
